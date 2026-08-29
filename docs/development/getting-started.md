@@ -1,25 +1,33 @@
 # Development Guide
 
-## Getting Started
+## Prerequisites
 
-1. Install .NET 10 SDK (10.0.400+)
-2. Clone the repository
-3. Run `dotnet restore BOS.slnx`
-4. Run `dotnet build BOS.slnx`
-5. Run `dotnet test BOS.slnx`
+- .NET 10 SDK (10.0.400+)
+- For Desktop: Windows 11 + Visual Studio 2026 Insiders
+
+## Quick Start
+
+```bash
+dotnet restore BOS.slnx
+dotnet build BOS.slnx
+dotnet test BOS.slnx
+```
+
+Note: `BOS.Desktop` (WinUI 3) is excluded from the cross-platform solution.
+Build it separately on Windows with Visual Studio 2026.
 
 ## Project Structure
 
-| Project | Purpose |
-|---------|---------|
-| BOS.Core | Shared kernel primitives |
-| BOS.Domain | Domain entities and aggregates |
-| BOS.Application | Use cases, CQRS handlers |
-| BOS.Infrastructure | EF Core, external services |
-| BOS.Api | ASP.NET Core API host |
-| BOS.Desktop | WinUI 3 desktop application |
-| BOS.Modules | Module engine abstractions |
-| BOS.Tests | All test types |
+| Project | Layer | Purpose |
+|---------|-------|---------|
+| BOS.Core | Core | Cross-cutting primitives (identity, tenancy, auth, results) |
+| BOS.Domain | Domain | DDD primitives (Entity, ValueObject, AggregateRoot, DomainEvent) |
+| BOS.Application | Application | CQRS, event/persistence contracts, DI registration |
+| BOS.Infrastructure | Infrastructure | EF Core, external service implementations |
+| BOS.Api | Presentation | ASP.NET Core 10 API host |
+| BOS.Desktop | Presentation | WinUI 3 desktop application (Windows-only) |
+| BOS.Modules | Cross-cutting | Module engine abstractions |
+| BOS.Tests | Tests | Architecture, unit, and integration tests |
 
 ## Conventions
 
@@ -27,3 +35,4 @@
 - Nullable reference types enabled
 - Treat warnings as errors
 - Architecture tests enforce Clean Architecture dependency rules
+- No business modules in the foundation phase

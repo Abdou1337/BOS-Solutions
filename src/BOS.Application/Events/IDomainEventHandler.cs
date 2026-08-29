@@ -1,7 +1,9 @@
-namespace BOS.Core.Events;
+using BOS.Domain.Primitives;
+
+namespace BOS.Application.Events;
 
 /// <summary>
-/// Handles a specific domain event type.
+/// Application-level contract for handling a specific domain event type.
 /// </summary>
 public interface IDomainEventHandler<in TEvent> where TEvent : IDomainEvent
 {

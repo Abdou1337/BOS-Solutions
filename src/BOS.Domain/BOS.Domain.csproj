@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <RootNamespace>BOS.Domain</RootNamespace>
-    <Description>BOS Solutions - Domain layer</Description>
+    <Description>BOS Solutions - Domain layer with DDD primitives</Description>
   </PropertyGroup>
 
   <ItemGroup>

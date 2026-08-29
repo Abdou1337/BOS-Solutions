@@ -1,7 +1,7 @@
-namespace BOS.Core;
+namespace BOS.Domain.Primitives;
 
 /// <summary>
-/// Base record for domain events.
+/// Base record for domain events providing default identity and timestamp.
 /// </summary>
 public abstract record DomainEvent : IDomainEvent
 {

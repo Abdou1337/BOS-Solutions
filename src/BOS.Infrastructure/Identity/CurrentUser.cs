@@ -4,7 +4,8 @@ using BOS.Core.MultiTenancy;
 namespace BOS.Infrastructure.Identity;
 
 /// <summary>
-/// Default implementation of ICurrentUser (unauthenticated).
+/// Default implementation of ICurrentUser.
+/// Populated from the authentication middleware in future phases.
 /// </summary>
 public sealed class CurrentUser : ICurrentUser
 {
@@ -16,6 +17,7 @@ public sealed class CurrentUser : ICurrentUser
 
 /// <summary>
 /// Default tenant context.
+/// Populated from the tenant resolution middleware in future phases.
 /// </summary>
 public sealed class TenantContext : ITenantContext
 {

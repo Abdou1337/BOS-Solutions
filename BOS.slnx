@@ -5,9 +5,14 @@
     <Project Path="src/BOS.Application/BOS.Application.csproj" />
     <Project Path="src/BOS.Infrastructure/BOS.Infrastructure.csproj" />
     <Project Path="src/BOS.Api/BOS.Api.csproj" />
-    <Project Path="src/BOS.Desktop/BOS.Desktop.csproj" />
     <Project Path="src/BOS.Modules/BOS.Modules.csproj" />
   </Folder>
+  <!--
+    BOS.Desktop (WinUI 3) is excluded from the cross-platform solution.
+    It requires Windows 11 + Visual Studio 2026 Insiders to build.
+    Open BOS.Desktop/BOS.Desktop.csproj directly in Visual Studio,
+    or add it to the solution on Windows.
+  -->
   <Folder Name="/tests/">
     <Project Path="tests/BOS.Tests/BOS.Tests.csproj" />
   </Folder>

@@ -1,11 +1,13 @@
-using BOS.Core;
-using BOS.Core.Events;
+using BOS.Application.Events;
+using BOS.Domain.Primitives;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace BOS.Infrastructure.Events;
 
 /// <summary>
-/// In-process domain event dispatcher using DI-resolved handlers.
+/// In-process domain event dispatcher that resolves handlers from DI.
+/// This is a foundation-level implementation for in-process dispatch only.
+/// Future phases may add outbox patterns and integration event support.
 /// </summary>
 public sealed class DomainEventDispatcher : IDomainEventDispatcher
 {
@@ -39,11 +41,5 @@ public sealed class DomainEventDispatcher : IDomainEventDispatcher
         {
             await DispatchAsync(domainEvent, cancellationToken);
         }
-    }
-
-    private static IEnumerable<object?> GetServices(IServiceProvider provider, Type serviceType)
-    {
-        var enumerableType = typeof(IEnumerable<>).MakeGenericType(serviceType);
-        return (IEnumerable<object?>?)provider.GetService(enumerableType) ?? [];
     }
 }

@@ -1,32 +1,23 @@
-using BOS.Core.Events;
-using BOS.Core.Persistence;
+using BOS.Application.Persistence;
 using Microsoft.EntityFrameworkCore;
 
 namespace BOS.Infrastructure.Persistence;
 
 /// <summary>
-/// Main EF Core DbContext for BOS platform.
+/// Foundation-level EF Core DbContext for BOS platform.
+/// Currently minimal — future phases will add entity configurations
+/// per bounded context/module.
 /// </summary>
 public sealed class BosDbContext : DbContext, IUnitOfWork
 {
-    private readonly IDomainEventDispatcher? _eventDispatcher;
-
-    public BosDbContext(DbContextOptions<BosDbContext> options, IDomainEventDispatcher? eventDispatcher = null)
+    public BosDbContext(DbContextOptions<BosDbContext> options)
         : base(options)
     {
-        _eventDispatcher = eventDispatcher;
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(BosDbContext).Assembly);
-    }
-
-    public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
-    {
-        var result = await base.SaveChangesAsync(cancellationToken);
-        // Domain event dispatching would happen here in a full implementation
-        return result;
     }
 }

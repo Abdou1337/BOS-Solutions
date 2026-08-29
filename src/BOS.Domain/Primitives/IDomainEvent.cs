@@ -1,7 +1,7 @@
-namespace BOS.Core;
+namespace BOS.Domain.Primitives;
 
 /// <summary>
-/// Represents a domain event.
+/// Represents a domain event raised by an aggregate.
 /// </summary>
 public interface IDomainEvent
 {

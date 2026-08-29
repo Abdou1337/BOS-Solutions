@@ -5,33 +5,72 @@ BOS Solutions follows **Clean Architecture** with **Domain-Driven Design (DDD)**
 ## Layer Dependencies
 
 ```
-BOS.Api ──► BOS.Infrastructure ──► BOS.Application ──► BOS.Domain ──► BOS.Core
-BOS.Modules ──────────────────────► BOS.Application ──► BOS.Domain ──► BOS.Core
-BOS.Desktop ──────────────────────► BOS.Application ──► BOS.Domain ──► BOS.Core
+Core (cross-cutting primitives — no BOS dependencies)
+  ↑
+Domain (DDD primitives — depends on Core only)
+  ↑
+Application (use cases, CQRS, event/persistence contracts — depends on Domain + Core)
+  ↑
+Infrastructure (EF Core, external services — depends on Application)
+  ↑
+API / Desktop (presentation — depends on Infrastructure or Application)
 ```
 
-## Core Primitives (BOS.Core)
+Modules (module engine) are independent — they depend only on DI abstractions.
 
-- `Entity<TId>` — Base entity with domain event support
-- `EntityId` — Strongly-typed identifier base
-- `ValueObject` — Value object base
-- `IDomainEvent` / `DomainEvent` — Domain event contracts
-- `IRepository<T, TId>` — Generic repository interface
-- `IUnitOfWork` — Unit of work abstraction
-- `ITenantContext` / `ITenantScoped` — Multi-tenancy abstractions
-- `ICurrentUser` / `UserId` — Identity boundaries
-- `IAuthorizationService` / `Permission` — Authorization boundaries
-- `IDomainEventDispatcher` / `IDomainEventHandler<T>` — Event infrastructure
-- `Result` / `Result<T>` — Operation result types
+## Status Legend
 
-## Module Engine (BOS.Modules)
+- **Implemented**: Code exists and is functional
+- **Prepared**: Abstractions/boundaries exist, implementation deferred
+- **Planned**: Documented in roadmap, no code yet
 
-- `IBosModule` — Module contract for pluggable business modules
-- `ModuleEngine` — Discovers, registers, and configures modules
+## Core Layer (Implemented)
 
-## Key Patterns
+Cross-cutting platform primitives only:
+- `UserId` / `ICurrentUser` — identity boundary
+- `TenantId` / `ITenantContext` / `ITenantScoped` — multi-tenancy boundary
+- `Permission` / `IAuthorizationService` — authorization boundary
+- `Result` / `Result<T>` — operation result types
 
-- **CQRS**: `ICommand` / `IQuery<T>` with corresponding handlers
-- **DDD**: Aggregates, entities, value objects, domain events
-- **Multi-Tenancy**: Tenant-scoped entities and context
-- **Clean Architecture**: Enforced via architecture tests
+## Domain Layer (Implemented)
+
+DDD primitives:
+- `EntityId` — strongly-typed identifier base
+- `Entity<TId>` — base entity with domain event support
+- `IAggregateRoot` — aggregate root marker
+- `IDomainEvent` / `DomainEvent` — domain event contracts
+- `ValueObject` — value object base
+
+No business aggregates yet — those belong in future bounded context modules.
+
+## Application Layer (Implemented)
+
+- `ICommand` / `ICommandHandler<T>` — CQRS command contracts
+- `IQuery<T>` / `IQueryHandler<T, TResult>` — CQRS query contracts
+- `IDomainEventDispatcher` / `IDomainEventHandler<T>` — event dispatch contracts
+- `IUnitOfWork` — persistence coordination
+
+## Infrastructure Layer (Implemented)
+
+- `BosDbContext` — EF Core context (foundation-level, no entity configs yet)
+- `DomainEventDispatcher` — in-process event dispatcher
+- `CurrentUser` / `TenantContext` — default identity/tenancy implementations
+- Service registration with SQLite/PostgreSQL provider selection
+
+## API Layer (Implemented)
+
+- ASP.NET Core 10 host with OpenAPI and SignalR
+- Health check endpoint
+- Authentication/authorization middleware registered (Prepared — Supabase integration deferred)
+
+## Desktop Layer (Implemented)
+
+- Real WinUI 3 / Windows App SDK project configuration
+- App.xaml / MainWindow shell
+- CommunityToolkit.Mvvm with DI
+- Requires Windows 11 + Visual Studio 2026 (excluded from Linux CI)
+
+## Module Engine (Implemented)
+
+- `IBosModule` — module contract
+- `ModuleEngine` — module registration and service configuration

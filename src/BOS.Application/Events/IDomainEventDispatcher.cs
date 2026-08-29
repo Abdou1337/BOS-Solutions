@@ -1,7 +1,10 @@
-namespace BOS.Core.Events;
+using BOS.Domain.Primitives;
+
+namespace BOS.Application.Events;
 
 /// <summary>
-/// Dispatches domain events to registered handlers.
+/// Application-level contract for dispatching domain events.
+/// Implementation lives in Infrastructure.
 /// </summary>
 public interface IDomainEventDispatcher
 {

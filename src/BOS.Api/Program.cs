@@ -3,14 +3,19 @@ using BOS.Infrastructure.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services
+// Application layer services
 builder.Services.AddApplicationServices();
+
+// Infrastructure layer services (foundation-level: SQLite for local dev)
 builder.Services.AddInfrastructureServices(
     builder.Configuration.GetConnectionString("Default") ?? "Data Source=bos.db",
     useSqlite: true);
 
+// ASP.NET Core services
 builder.Services.AddOpenApi();
 builder.Services.AddSignalR();
+
+// Authentication boundary (prepared — Supabase Auth integration deferred to Phase 2)
 builder.Services.AddAuthentication();
 builder.Services.AddAuthorization();
 

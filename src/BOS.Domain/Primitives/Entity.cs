@@ -1,7 +1,8 @@
-namespace BOS.Core;
+namespace BOS.Domain.Primitives;
 
 /// <summary>
-/// Base class for all domain entities.
+/// Base class for domain entities with strongly-typed identifiers
+/// and domain event support.
 /// </summary>
 public abstract class Entity<TId> where TId : EntityId
 {

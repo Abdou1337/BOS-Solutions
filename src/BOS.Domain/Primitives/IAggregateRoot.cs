@@ -1,4 +1,4 @@
-namespace BOS.Core;
+namespace BOS.Domain.Primitives;
 
 /// <summary>
 /// Marker interface for aggregate roots.
