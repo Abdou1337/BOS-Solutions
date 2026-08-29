@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>BOS.Core</RootNamespace>
+    <Description>BOS Solutions - Core primitives and shared kernel</Description>
+  </PropertyGroup>
+
+</Project>

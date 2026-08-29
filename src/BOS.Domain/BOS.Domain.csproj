@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>BOS.Domain</RootNamespace>
+    <Description>BOS Solutions - Domain layer with DDD primitives</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BOS.Core\BOS.Core.csproj" />
+  </ItemGroup>
+
+</Project>

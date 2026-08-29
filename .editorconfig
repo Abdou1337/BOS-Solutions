@@ -1,0 +1,35 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.{csproj,props,targets,slnx,json,yml,yaml,xml}]
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.cs]
+# Namespace
+csharp_style_namespace_declarations = file_scoped:warning
+
+# Usings
+dotnet_sort_system_directives_first = true
+
+# Nullable
+dotnet_diagnostic.CS8600.severity = error
+dotnet_diagnostic.CS8602.severity = error
+dotnet_diagnostic.CS8603.severity = error
+
+# Allow DDD naming conventions
+dotnet_diagnostic.CA1711.severity = suggestion
+dotnet_diagnostic.CA1000.severity = suggestion
+
+[*Tests*/**/*.cs]
+# Allow underscores in test method names
+dotnet_diagnostic.CA1707.severity = none

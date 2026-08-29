@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/BOS.Core/BOS.Core.csproj" />
+    <Project Path="src/BOS.Domain/BOS.Domain.csproj" />
+    <Project Path="src/BOS.Application/BOS.Application.csproj" />
+    <Project Path="src/BOS.Infrastructure/BOS.Infrastructure.csproj" />
+    <Project Path="src/BOS.Api/BOS.Api.csproj" />
+    <Project Path="src/BOS.Desktop/BOS.Desktop.csproj" />
+    <Project Path="src/BOS.Modules/BOS.Modules.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/BOS.Tests/BOS.Tests.csproj" />
+  </Folder>
+</Solution>
