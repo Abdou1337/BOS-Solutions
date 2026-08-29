@@ -1,0 +1,430 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/runner/work/BOS-Solutions/BOS-Solutions/tests/BOS.Architecture.Tests/BOS.Architecture.Tests.csproj": {}
+  },
+  "projects": {
+    "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.API/BOS.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.API/BOS.API.csproj",
+        "projectName": "BOS.API",
+        "projectPath": "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.API/BOS.API.csproj",
+        "packagesPath": "/tmp/codeql-scratch-95765917eb3b9ed2/dbs/csharp/working/packages",
+        "outputPath": "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/runner/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net10.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net10.0": {
+            "framework": "net10.0",
+            "targetAlias": "net10.0",
+            "projectReferences": {
+              "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/BOS.Application.csproj": {
+                "projectPath": "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/BOS.Application.csproj"
+              },
+              "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Infrastructure/BOS.Infrastructure.csproj": {
+                "projectPath": "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Infrastructure/BOS.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net10.0": {
+          "framework": "net10.0",
+          "targetAlias": "net10.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[10.0.11, 10.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[10.0.11, 10.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[10.0.11, 10.0.11]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/BOS.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/BOS.Application.csproj",
+        "projectName": "BOS.Application",
+        "projectPath": "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/BOS.Application.csproj",
+        "packagesPath": "/tmp/codeql-scratch-95765917eb3b9ed2/dbs/csharp/working/packages",
+        "outputPath": "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/runner/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net10.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net10.0": {
+            "framework": "net10.0",
+            "targetAlias": "net10.0",
+            "projectReferences": {
+              "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Domain/BOS.Domain.csproj": {
+                "projectPath": "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Domain/BOS.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net10.0": {
+          "framework": "net10.0",
+          "targetAlias": "net10.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[10.0.11, 10.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[10.0.11, 10.0.11]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Domain/BOS.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Domain/BOS.Domain.csproj",
+        "projectName": "BOS.Domain",
+        "projectPath": "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Domain/BOS.Domain.csproj",
+        "packagesPath": "/tmp/codeql-scratch-95765917eb3b9ed2/dbs/csharp/working/packages",
+        "outputPath": "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/runner/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net10.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net10.0": {
+            "framework": "net10.0",
+            "targetAlias": "net10.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net10.0": {
+          "framework": "net10.0",
+          "targetAlias": "net10.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[10.0.11, 10.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[10.0.11, 10.0.11]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Infrastructure/BOS.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Infrastructure/BOS.Infrastructure.csproj",
+        "projectName": "BOS.Infrastructure",
+        "projectPath": "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Infrastructure/BOS.Infrastructure.csproj",
+        "packagesPath": "/tmp/codeql-scratch-95765917eb3b9ed2/dbs/csharp/working/packages",
+        "outputPath": "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/runner/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net10.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net10.0": {
+            "framework": "net10.0",
+            "targetAlias": "net10.0",
+            "projectReferences": {
+              "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/BOS.Application.csproj": {
+                "projectPath": "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/BOS.Application.csproj"
+              },
+              "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Domain/BOS.Domain.csproj": {
+                "projectPath": "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Domain/BOS.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net10.0": {
+          "framework": "net10.0",
+          "targetAlias": "net10.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.*, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[10.0.11, 10.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[10.0.11, 10.0.11]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/runner/work/BOS-Solutions/BOS-Solutions/tests/BOS.Architecture.Tests/BOS.Architecture.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/runner/work/BOS-Solutions/BOS-Solutions/tests/BOS.Architecture.Tests/BOS.Architecture.Tests.csproj",
+        "projectName": "BOS.Architecture.Tests",
+        "projectPath": "/home/runner/work/BOS-Solutions/BOS-Solutions/tests/BOS.Architecture.Tests/BOS.Architecture.Tests.csproj",
+        "packagesPath": "/tmp/codeql-scratch-95765917eb3b9ed2/dbs/csharp/working/packages",
+        "outputPath": "/home/runner/work/BOS-Solutions/BOS-Solutions/tests/BOS.Architecture.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/runner/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net10.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net10.0": {
+            "framework": "net10.0",
+            "targetAlias": "net10.0",
+            "projectReferences": {
+              "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.API/BOS.API.csproj": {
+                "projectPath": "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.API/BOS.API.csproj"
+              },
+              "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/BOS.Application.csproj": {
+                "projectPath": "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/BOS.Application.csproj"
+              },
+              "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Domain/BOS.Domain.csproj": {
+                "projectPath": "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Domain/BOS.Domain.csproj"
+              },
+              "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Infrastructure/BOS.Infrastructure.csproj": {
+                "projectPath": "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Infrastructure/BOS.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net10.0": {
+          "framework": "net10.0",
+          "targetAlias": "net10.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.*, )"
+            },
+            "NetArchTest.Rules": {
+              "target": "Package",
+              "version": "[1.*, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.*, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[3.*, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[10.0.11, 10.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[10.0.11, 10.0.11]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

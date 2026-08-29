@@ -1,0 +1,15 @@
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/bin/Debug/net10.0/BOS.Application.deps.json
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/bin/Debug/net10.0/BOS.Application.dll
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/bin/Debug/net10.0/BOS.Application.pdb
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/bin/Debug/net10.0/BOS.Domain.dll
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/bin/Debug/net10.0/BOS.Domain.pdb
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/obj/Debug/net10.0/BOS.Application.csproj.AssemblyReference.cache
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/obj/Debug/net10.0/BOS.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/obj/Debug/net10.0/BOS.Application.AssemblyInfoInputs.cache
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/obj/Debug/net10.0/BOS.Application.AssemblyInfo.cs
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/obj/Debug/net10.0/BOS.Application.csproj.CoreCompileInputs.cache
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/obj/Debug/net10.0/BOS.Appl.B1918535.Up2Date
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/obj/Debug/net10.0/BOS.Application.dll
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/obj/Debug/net10.0/refint/BOS.Application.dll
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/obj/Debug/net10.0/BOS.Application.pdb
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Application/obj/Debug/net10.0/ref/BOS.Application.dll

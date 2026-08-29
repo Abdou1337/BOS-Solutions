@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/BOS.Domain/BOS.Domain.csproj" />
+    <Project Path="src/BOS.Application/BOS.Application.csproj" />
+    <Project Path="src/BOS.Infrastructure/BOS.Infrastructure.csproj" />
+    <Project Path="src/BOS.API/BOS.API.csproj" />
+    <Project Path="src/BOS.Desktop/BOS.Desktop.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/BOS.Domain.Tests/BOS.Domain.Tests.csproj" />
+    <Project Path="tests/BOS.Architecture.Tests/BOS.Architecture.Tests.csproj" />
+  </Folder>
+</Solution>

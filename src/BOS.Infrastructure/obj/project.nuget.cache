@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "X2RhglnQ9Gg=",
+  "success": true,
+  "projectFilePath": "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Infrastructure/BOS.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "/tmp/codeql-scratch-95765917eb3b9ed2/dbs/csharp/working/packages/microsoft.extensions.dependencyinjection/10.0.11/microsoft.extensions.dependencyinjection.10.0.11.nupkg.sha512",
+    "/tmp/codeql-scratch-95765917eb3b9ed2/dbs/csharp/working/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.11/microsoft.extensions.dependencyinjection.abstractions.10.0.11.nupkg.sha512",
+    "/tmp/codeql-scratch-95765917eb3b9ed2/dbs/csharp/working/packages/microsoft.netcore.app.ref/10.0.11/microsoft.netcore.app.ref.10.0.11.nupkg.sha512",
+    "/tmp/codeql-scratch-95765917eb3b9ed2/dbs/csharp/working/packages/microsoft.aspnetcore.app.ref/10.0.11/microsoft.aspnetcore.app.ref.10.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}
