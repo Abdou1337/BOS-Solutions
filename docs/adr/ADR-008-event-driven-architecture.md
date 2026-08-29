@@ -22,6 +22,7 @@ Current implementation:
 - Distributed event bus from day one (premature — no Kafka/RabbitMQ/Service Bus yet)
 
 ## Consequences
-- Domain events are operational for in-process dispatch
+- Domain event contracts and in-process dispatcher are implemented
+- Persistence-boundary integration (dispatching events on SaveChanges) is deferred until business aggregates exist
 - No outbox pattern yet
 - Integration events and distributed messaging are future phases

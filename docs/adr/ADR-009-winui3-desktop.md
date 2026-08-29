@@ -22,6 +22,6 @@ Future desktop capabilities:
 - MAUI (broader platform but less desktop-focused)
 
 ## Consequences
-- Desktop project cannot be built on Linux CI
+- Desktop project requires Windows 11 + Visual Studio 2026 Insiders to build
 - Developers need Windows 11 + Visual Studio 2026 Insiders
 - Desktop references Application layer only (not Infrastructure)

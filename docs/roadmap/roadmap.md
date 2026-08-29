@@ -9,7 +9,7 @@
 - [x] Multi-tenant boundaries
 - [x] Identity and authorization boundaries
 - [x] Persistence boundaries (IUnitOfWork in Application)
-- [x] Event infrastructure (domain event contracts + in-process dispatcher)
+- [x] Event infrastructure (domain event contracts + in-process dispatcher; persistence integration deferred)
 - [x] Module engine
 - [x] API shell (ASP.NET Core, OpenAPI, SignalR)
 - [x] Desktop shell (WinUI 3, MVVM, DI)

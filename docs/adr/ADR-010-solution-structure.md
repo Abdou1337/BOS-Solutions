@@ -39,5 +39,5 @@ Package versions centralized in `Directory.Packages.props`. Shared build setting
 
 ## Consequences
 - Single solution for all projects
-- Desktop excluded from CI solution on Linux
+- Desktop requires Windows 11 + Visual Studio 2026 Insiders to build
 - Compatible with Visual Studio 2026 Insiders on Windows

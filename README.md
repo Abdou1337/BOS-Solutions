@@ -15,7 +15,7 @@
 | Identity Boundaries | Prepared |
 | Authorization Boundaries | Prepared |
 | Persistence Boundaries | Prepared |
-| Event Infrastructure | Implemented (in-process) |
+| Event Infrastructure | Prepared (dispatcher implemented, persistence integration deferred) |
 | Module Engine | Implemented |
 | API Shell | Implemented |
 | Desktop Shell | Implemented (Windows-only) |
