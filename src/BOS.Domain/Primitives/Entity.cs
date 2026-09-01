@@ -1,10 +1,19 @@
 namespace BOS.Domain.Primitives;
 
 /// <summary>
+/// Defines an entity that can raise domain events.
+/// </summary>
+public interface IEntityWithDomainEvents
+{
+    IReadOnlyList<IDomainEvent> DomainEvents { get; }
+    void ClearDomainEvents();
+}
+
+/// <summary>
 /// Base class for domain entities with strongly-typed identifiers
 /// and domain event support.
 /// </summary>
-public abstract class Entity<TId> where TId : EntityId
+public abstract class Entity<TId> : IEntityWithDomainEvents where TId : EntityId
 {
     public TId Id { get; protected set; } = default!;
 

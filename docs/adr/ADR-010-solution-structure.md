@@ -39,5 +39,5 @@ Package versions centralized in `Directory.Packages.props`. Shared build setting
 
 ## Consequences
 - Single solution for all projects
-- Desktop excluded from CI solution on Linux
+- Desktop validated in Windows GitHub Actions CI
 - Compatible with Visual Studio 2026 Insiders on Windows
