@@ -1,0 +1,7 @@
+<Solution>
+  <Projects>
+    <Project Path="src/BOS.Desktop/BOS.Desktop.csproj" />
+    <Project Path="src/BOS.Infrastructure/BOS.Infrastructure.csproj" />
+    <Project Path="src/BOS.Domain/BOS.Domain.csproj" />
+  </Projects>
+</Solution>

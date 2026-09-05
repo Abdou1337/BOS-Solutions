@@ -1,0 +1,11 @@
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Domain/bin/Debug/net8.0/BOS.Domain.deps.json
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Domain/bin/Debug/net8.0/BOS.Domain.dll
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Domain/bin/Debug/net8.0/BOS.Domain.pdb
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Domain/obj/Debug/net8.0/BOS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Domain/obj/Debug/net8.0/BOS.Domain.AssemblyInfoInputs.cache
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Domain/obj/Debug/net8.0/BOS.Domain.AssemblyInfo.cs
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Domain/obj/Debug/net8.0/BOS.Domain.csproj.CoreCompileInputs.cache
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Domain/obj/Debug/net8.0/BOS.Domain.dll
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Domain/obj/Debug/net8.0/refint/BOS.Domain.dll
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Domain/obj/Debug/net8.0/BOS.Domain.pdb
+/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Domain/obj/Debug/net8.0/ref/BOS.Domain.dll
