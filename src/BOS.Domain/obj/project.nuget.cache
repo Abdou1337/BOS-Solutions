@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "DlkkOk0G9S4=",
+  "dgSpecHash": "aaPjbP9l27Y=",
   "success": true,
   "projectFilePath": "/home/runner/work/BOS-Solutions/BOS-Solutions/src/BOS.Domain/BOS.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/tmp/codeql-scratch-95765917eb3b9ed2/dbs/csharp/working/packages/microsoft.netcore.app.ref/8.0.30/microsoft.netcore.app.ref.8.0.30.nupkg.sha512",
+    "/tmp/codeql-scratch-95765917eb3b9ed2/dbs/csharp/working/packages/microsoft.aspnetcore.app.ref/8.0.30/microsoft.aspnetcore.app.ref.8.0.30.nupkg.sha512"
+  ],
   "logs": []
 }
