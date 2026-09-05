@@ -72,6 +72,12 @@ public class CleanArchitectureTests
         AssertNoDependency(DomainAssembly, "Microsoft.EntityFrameworkCore");
     }
 
+    [Fact]
+    public void Domain_ShouldNotDependOn_Desktop()
+    {
+        AssertNoDependency(DomainAssembly, "BOS.Desktop");
+    }
+
     // --- Application layer: depends on Domain + Core only ---
 
     [Fact]
@@ -90,6 +96,12 @@ public class CleanArchitectureTests
     public void Application_ShouldNotDependOn_EFCore()
     {
         AssertNoDependency(ApplicationAssembly, "Microsoft.EntityFrameworkCore");
+    }
+
+    [Fact]
+    public void Application_ShouldNotDependOn_Desktop()
+    {
+        AssertNoDependency(ApplicationAssembly, "BOS.Desktop");
     }
 
     // --- Modules: must not require concrete business modules ---
@@ -112,12 +124,24 @@ public class CleanArchitectureTests
         AssertNoDependency(ModulesAssembly, "Microsoft.EntityFrameworkCore");
     }
 
+    [Fact]
+    public void Modules_ShouldNotDependOn_Desktop()
+    {
+        AssertNoDependency(ModulesAssembly, "BOS.Desktop");
+    }
+
     // --- No circular dependencies ---
 
     [Fact]
     public void Infrastructure_ShouldNotDependOn_Api()
     {
         AssertNoDependency(InfrastructureAssembly, "BOS.Api");
+    }
+
+    [Fact]
+    public void Infrastructure_ShouldNotDependOn_Desktop()
+    {
+        AssertNoDependency(InfrastructureAssembly, "BOS.Desktop");
     }
 
     private static void AssertNoDependency(Assembly assembly, string forbiddenAssemblyName)

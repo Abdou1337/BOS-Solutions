@@ -37,4 +37,8 @@
     <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.4.0" />
   </ItemGroup>
 
+  <ItemGroup Label="Windows">
+    <PackageVersion Include="Microsoft.WindowsAppSDK" Version="1.6.250108002" />
+  </ItemGroup>
+
 </Project>
