@@ -68,7 +68,7 @@ No business aggregates yet — those belong in future bounded context modules.
 - Real WinUI 3 / Windows App SDK project configuration
 - App.xaml / MainWindow shell
 - CommunityToolkit.Mvvm with DI
-- Requires Windows 11 + Visual Studio 2026 (excluded from Linux CI)
+- Requires Windows 11 + Visual Studio 2026 (validated in Windows CI)
 
 ## Module Engine (Implemented)
 
