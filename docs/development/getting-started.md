@@ -13,8 +13,7 @@ dotnet build BOS.slnx
 dotnet test BOS.slnx
 ```
 
-Note: `BOS.Desktop` (WinUI 3) is excluded from the cross-platform solution.
-Build it separately on Windows with Visual Studio 2026.
+Note: `BOS.Desktop` (WinUI 3) requires Windows 11 + Visual Studio 2026 Insiders. Build it on Windows; the CI pipeline runs on `windows-latest`.
 
 ## Project Structure
 

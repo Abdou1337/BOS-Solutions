@@ -38,6 +38,5 @@ Package versions centralized in `Directory.Packages.props`. Shared build setting
 - Monorepo with multiple solutions (overkill at this stage)
 
 ## Consequences
-- Single solution for all projects
-- Desktop excluded from CI solution on Linux
+- Single solution for all projects, built on Windows CI
 - Compatible with Visual Studio 2026 Insiders on Windows

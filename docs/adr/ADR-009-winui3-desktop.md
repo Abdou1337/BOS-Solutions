@@ -11,7 +11,7 @@ The platform includes a Windows desktop application for business users. It must 
 - Use CommunityToolkit.Mvvm for MVVM pattern
 - Use Microsoft.Extensions.DependencyInjection for DI
 - Desktop project is presentation-only — no business logic in ViewModels
-- Desktop is excluded from cross-platform CI builds (requires Windows)
+- Desktop is built on Windows CI only (requires Windows 11 + Visual Studio 2026 Insiders)
 
 Future desktop capabilities:
 - Authentication, Workspace, Navigation, Module hosting, Notifications, Settings, Device Integration
@@ -22,6 +22,6 @@ Future desktop capabilities:
 - MAUI (broader platform but less desktop-focused)
 
 ## Consequences
-- Desktop project cannot be built on Linux CI
+- Desktop project requires Windows CI (windows-latest runner)
 - Developers need Windows 11 + Visual Studio 2026 Insiders
 - Desktop references Application layer only (not Infrastructure)
